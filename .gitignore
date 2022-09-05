@@ -1,11 +1,3 @@
-# Dracula Template
-
-_site
-.sass-cache
-Gemfile.lock
-*.gem
-.jekyll-cache
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
