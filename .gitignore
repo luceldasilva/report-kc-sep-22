@@ -1,4 +1,6 @@
 README.md
+table_create.sql
+*.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
