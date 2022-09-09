@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS kcsep22;
 
 create table kcsep22 (
 	id SERIAL PRIMARY KEY,
-	usuario varchar(50) not null,
+	usuario varchar(50) not null UNIQUE,
 	deck varchar(100) not null,
 	skill varchar(255) not null,
 	wins int,
