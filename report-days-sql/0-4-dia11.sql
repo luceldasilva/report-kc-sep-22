@@ -1,4 +1,5 @@
 -- 11/09/22
+-- ZeroTG
 insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('0746', 'Harpies', 'Lectura Mental', 93, '10/9/2022', true, false, false, false),
@@ -12,6 +13,11 @@ values
 	('7330', 'Magician Girls', 'Las Chicas Magas', 46, '11/9/2022', true, false, false, false),
 	('6453', 'Ice Barrier', 'Territorio de Tiburones', 98, '11/9/2022', true, false, false, false);
 --	
+insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
+values 
+	('8669', 'Phantom Knights', 'Estrategia Fantasma', '11/9/2022', true, false, false, false);
+--	
+-- El Zuegra
 insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('8339', 'Lunalight', 'Robo del Destino', 89, '11/9/2022', false, true, false, false),
@@ -21,7 +27,16 @@ values
 	('1746', 'Stromberg', 'Robar sentido Viento', 98, '11/9/2022', false, true, false, false),
 	('1277', 'Galaxy-Eyes', 'Galaxia XYZ', 87, '11/9/2022', false, true, false, false),
 	('6969', 'Rose Dragon', 'Conjuro de Rosas', 37, '11/9/2022', false, true, false, false);
---	
+--
+insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
+values 
+	('1427', 'Railway', 'Tren Imparable', '11/9/2022', false, true, false, false),
+	('5132', 'War Rock', 'Oleada de Iluminación', '11/9/2022', false, true, false, false),
+	('0771', 'Elemental Heros', 'Duelo Favorito', '11/9/2022', false, true, false, false),
+	('3400', 'Railway', 'Tren Imparable', '11/9/2022', false, true, false, false),
+	('3842', 'Galaxy-Eyes', 'Galaxia XYZ', '11/9/2022', false, true, false, false);
+--
+-- Bryan Noren
 insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('4768', 'Galaxy-Eyes', 'Galaxia XYZ', 49, '11/9/2022', false, false, true, false),
@@ -34,27 +49,15 @@ values
 	('8589', 'Elemental Heros', 'Duelo Favorito', 57, '11/9/2022', false, false, true, false),
 	('3957', 'Lunalight', 'Maestro de Fusión', 103, '11/9/2022', false, false, true, false);
 --
-insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
-values
-	('9561', 'D/D/D', 'El Mando del Rey de la Perdición', 93, '11/9/2022', false, false, false, true);
---		
--- Datos sin wins
-insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
-values 
-	('8669', 'Phantom Knights', 'Estrategia Fantasma', '11/9/2022', true, false, false, false);
---	
-insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
-values 
-	('1427', 'Railway', 'Tren Imparable', '11/9/2022', false, true, false, false),
-	('5132', 'War Rock', 'Oleada de Iluminación', '11/9/2022', false, true, false, false),
-	('0771', 'Elemental Heros', 'Duelo Favorito', '11/9/2022', false, true, false, false),
-	('3400', 'Railway', 'Tren Imparable', '11/9/2022', false, true, false, false),
-	('3842', 'Galaxy-Eyes', 'Galaxia XYZ', '11/9/2022', false, true, false, false);
---
 insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('3895', 'Satellarknights', 'Robo del Destino', '11/9/2022', false, false, true, false);
 --
+-- Xenoblur
+insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
+values
+	('9561', 'D/D/D', 'El Mando del Rey de la Perdición', 93, '11/9/2022', false, false, false, true);
+--		
 insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('9862', 'Destiny Heros', 'Reloj del Destino', '10/9/2022', false, false, false, true),
@@ -93,14 +96,13 @@ select * from kcsep22 where usuario like '%6969%';
 select * from kcsep22 where usuario like '%5168%';
 update kcsep22 set zephra = true where id = 124;
 select * from kcsep22 where usuario like '%3400%';
-select * from kcsep22 where usuario like '%3400%';
-update kcsep22 set zephra = true where id = 124;
+update kcsep22 set zephra = true where id = 140;
 --
 select * from kcsep22 where usuario like '%3895%';
 select * from kcsep22 where usuario like '%4768%';
 select * from kcsep22 where usuario like '%7767%';
 select * from kcsep22 where usuario like '%5132%';
-update kcsep22 set bryan = true where id = 131;
+update kcsep22 set bryan = true where id = 138;
 select * from kcsep22 where usuario like '%0498%';
 select * from kcsep22 where usuario like '%3672%';
 select * from kcsep22 where usuario like '%3781%';
@@ -114,19 +116,17 @@ select * from kcsep22 where usuario like '%9862%';
 select * from kcsep22 where usuario like '%2575%';
 select * from kcsep22 where usuario like '%9561%';
 select * from kcsep22 where usuario like '%1746%';
-update kcsep22 set xenoblur = true where id = 138;
+update kcsep22 set xenoblur = true where id = 134;
 select * from kcsep22 where usuario like '%4536%';
 update kcsep22 set xenoblur = true where id = 13;
 select * from kcsep22 where usuario like '%0829%';
 update kcsep22 set xenoblur = true where id = 92;
 select * from kcsep22 where usuario like '%4768%';
-update kcsep22 set xenoblur = true where id = 143;
+update kcsep22 set xenoblur = true where id = 142;
 select * from kcsep22 where usuario like '%0498%';
-update kcsep22 set xenoblur = true where id = 145;
+update kcsep22 set xenoblur = true where id = 144;
 select * from kcsep22 where usuario like '%4680%';
-update kcsep22 set xenoblur = true where id = 45;
-select * from kcsep22 where usuario like '%5168%';
-update kcsep22 set xenoblur = true where id = 124;
+update kcsep22 set xenoblur = true where id = 40;
 select * from kcsep22 where usuario like '%5168%';
 update kcsep22 set xenoblur = true where id = 124;
 --

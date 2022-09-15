@@ -1,4 +1,5 @@
 -- 10/09/22
+-- ZeroTG
 insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('5189', 'Phantom Knights', 'Estrategia Fantasma', 43, '9/9/2022', true, false, false, false),
@@ -18,6 +19,7 @@ values
 	('3874', 'Destiny Heros', 'Reloj del Destino', 51, '10/9/2022', true, false, false, false),
 	('3622', 'Blackwings', 'Viento Negro hasta la Cima', 59, '10/9/2022', true, false, false, false);
 --
+-- El Zuegra
 insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('8650', 'Fluffal', 'Precognición', 75, '9/9/2022', false, true, false, false),
@@ -26,6 +28,11 @@ values
 	('3680', 'Tech Genus', 'Control de Vuelo', 53, '10/9/2022', false, true, false, false),
 	('1900', 'Abyss Actor', 'Tumbas Selladas', 133, '10/9/2022', false, true, false, false);
 --	
+insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
+values 
+	('1387', 'Magnet Warrios', 'Robo del Destino', '10/9/2022', false, true, false, false);
+--
+-- Bryan Noren
 insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('6631', 'D/D/D', 'El Mando del Rey de la Perdición', 62, '9/9/2022', false, false, true, false),
@@ -42,21 +49,17 @@ values
 	('6013', 'Necroz', 'Robar sentido Luz', 165, '10/9/2022', false, false, true, false),
 	('2789', 'Water XYZ', 'Territorio de Tiburones', 61, '10/9/2022', false, false, true, false);
 --
-insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
-values 
-	('5906', 'Infernity', 'Fantasma Hueco', 79, '10/9/2022', false, false, false, true);
---		
--- Datos sin wins
-insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
-values 
-	('1387', 'Magnet Warrios', 'Robo del Destino', '10/9/2022', false, true, false, false);
---
 insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('5263', 'Rose Dragon', 'Conjuro de Rosas', '10/9/2022', false, false, true, false),
 	('4618', 'Necroz', 'Maestro de Rituales', '10/9/2022', false, false, true, false),
 	('5284', 'Fossil', 'Agujero de Gólem', '10/9/2022', false, false, true, false);
 --
+-- Xenoblur
+insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
+values 
+	('5906', 'Infernity', 'Fantasma Hueco', 79, '10/9/2022', false, false, false, true);
+--		
 insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('8188', 'Odd-Eyes', 'Potenciador de Péndulo', '10/9/2022', false, false, false, true);
@@ -75,7 +78,7 @@ select deck, skill from kcsep22 where deck like '%/D%';
 select deck, skill from kcsep22 where deck like '%ek%';
 -- Actualizar datos
 select * from kcsep22 where usuario like '%1705%';
-update kcsep22 set zerotg = true where id = 74;
+update kcsep22 set zerotg = true where id = 78;
 --
 select * from kcsep22 where usuario like '%9017%';
 update kcsep22 set zephra = true where id = 60;
@@ -99,7 +102,7 @@ update kcsep22 set zephra = true where id = 89;
 select * from kcsep22 where usuario like '%1900%';
 --
 select * from kcsep22 where usuario like '%4409%';
-update kcsep22 set bryan = true where id = 32;
+update kcsep22 set bryan = true where id = 37;
 select * from kcsep22 where usuario like '%6631%';
 select * from kcsep22 where usuario like '%2267%';
 select * from kcsep22 where usuario like '%9092%';
@@ -123,7 +126,7 @@ select * from kcsep22 where usuario like '%6013%';
 select * from kcsep22 where usuario like '%2789%';
 select * from kcsep22 where usuario like '%5283%';
 select * from kcsep22 where usuario like '%1137%';
-update kcsep22 set bryan = true where id = 75;
+update kcsep22 set bryan = true where id = 63;
 --
 select * from kcsep22 where usuario like '%5906%';
 select * from kcsep22 where usuario like '%1497%';

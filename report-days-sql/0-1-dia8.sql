@@ -1,4 +1,5 @@
 -- 8/09/22
+-- ZeroTG
 insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('0953', 'Tech Genus', 'Control de Vuelo', 62, '6/9/2022', true, false, false, false),
@@ -28,7 +29,16 @@ values
 	('5294', 'Destiny Heros', 'Reloj del Destino', 61, '8/9/2022', true, false, false, false),
 	('2185', 'Odd-Eyes', 'Xiangke y Xiangsheng', 65, '8/9/2022', true, false, false, false),
 	('2848', 'Lunalight', 'Robo del Destino', 92, '8/9/2022', true, false, false, false);
+--
+insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
+values 
+	('1168', 'Elemental Heros', 'Duelo Favorito', '6/9/2022', true, false, false, false),
+	('0789', 'Tech Genus', 'Listos Aceleración Delta', '7/9/2022', true, false, false, false),
+	('9881', 'Rose Dragon', 'Conjuro de Rosas', '7/9/2022', true, false, false, false),
+	('8510', 'Abyss Actor', 'Tumbas Selladas', '8/9/2022', true, false, false, false),
+	('1463', 'Elemental Heros', 'Duelo Favorito', '8/9/2022', true, false, false, false);
 --	
+-- El zuegra
 insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('5407', 'Infernity', 'Fantasma Hueco', 124, '7/9/2022', false, true, false, false),
@@ -38,7 +48,12 @@ values
 	('4409', 'Meklord', 'Refinamiento Meklord', 77, '8/9/2022', false, true, false, false),
 	('6412', 'Necroz', 'Maestro de Rituales', 94, '8/9/2022', false, true, false, false),
 	('8171', 'Heros', 'Maestro de Fusión', 161, '8/9/2022', false, true, false, false);
---	
+--
+insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
+values 
+	('4680', 'Gandora', 'Luchar con Decisión', '8/9/2022', false, true, false, false);
+--
+-- Bryan Noren
 insert into kcsep22 (usuario, deck, skill, wins, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('3256', 'D/D/D', 'El Mando del Rey de la Perdición', 127, '6/9/2022', false, false, true, false),
@@ -46,19 +61,6 @@ values
 	('9548', 'D/D/D', 'El Mando del Rey de la Perdición', 94, '7/9/2022', false, false, true, false),
 	('6346', 'Buster Blader', 'Robar sentido Nivel bajo', 134, '8/9/2022', false, false, true, false),
 	('0803', 'D/D/D', 'El Mando del Rey de la Perdición', 134, '8/9/2022', false, false, true, false);
---
--- Datos sin wins
-insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
-values 
-	('1168', 'Elemental Heros', 'Duelo Favorito', '6/9/2022', true, false, false, false),
-	('0789', 'Tech Genus', 'Listos Aceleración Delta', '7/9/2022', true, false, false, false),
-	('9881', 'Rose Dragon', 'Conjuro de Rosas', '7/9/2022', true, false, false, false),
-	('8510', 'Abyss Actor', 'Tumbas Selladas', '8/9/2022', true, false, false, false),
-	('1463', 'Elemental Heros', 'Duelo Favorito', '8/9/2022', true, false, false, false);
---	
-insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
-values 
-	('4680', 'Gandora', 'Luchar con Decisión', '8/9/2022', false, true, false, false);
 --
 insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
@@ -91,8 +93,6 @@ select * from kcsep22 where usuario like '%1892%';
 update kcsep22 set zephra = true where id = 15;
 select * from kcsep22 where usuario like '%8510%';
 update kcsep22 set zephra = true where id = 31;
-select * from kcsep22 where usuario like '%5020%';
-update kcsep22 set zephra = true where id = 31;
 select * from kcsep22 where usuario like '%4680%';
 select * from kcsep22 where usuario like '%7553%';
 select * from kcsep22 where usuario like '%4409%';
@@ -119,8 +119,6 @@ select * from kcsep22 where usuario like '%9540%';
 update kcsep22 set bryan = true where id = 24;
 select * from kcsep22 where usuario like '%5294%';
 update kcsep22 set bryan = true where id = 25;
-select * from kcsep22 where usuario like '%7116%';
-update kcsep22 set bryan = true where id = 25;
 select * from kcsep22 where usuario like '%5226%';
 --
 select * from kcsep22 where usuario like '%9651%';
@@ -129,8 +127,6 @@ select * from kcsep22 where usuario like '%9861%';
 update kcsep22 set xenoblur = true where id = 22;
 select * from kcsep22 where usuario like '%9540%';
 update kcsep22 set xenoblur = true where id = 24;
-select * from kcsep22 where usuario like '%1513%';
-update kcsep22 set xenoblur = true where id = 17;
 select * from kcsep22 where usuario like '%1513%';
 update kcsep22 set xenoblur = true where id = 17;
 --
