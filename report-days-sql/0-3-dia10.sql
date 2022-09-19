@@ -7,7 +7,7 @@ values
 	('0410', 'Tech Genus', 'Control de Vuelo', 42, '10/9/2022', true, false, false, false),
 	('3137', 'SuperHeavy Samurai', 'Evolución del Estilo', 97, '10/9/2022', true, false, false, false),
 	('0770', 'Satellarknights', 'Robo del Destino', 81, '10/9/2022', true, false, false, false),
-	('3086', 'Galaxy-Eyes', 'Galaxya XYZ', 56, '10/9/2022', true, false, false, false),
+	('3086', 'Galaxy-Eyes', 'Galaxia XYZ', 56, '10/9/2022', true, false, false, false),
 	('2711', 'Necroz', 'Robar sentido Luz', 47, '10/9/2022', true, false, false, false),
 	('7474', 'Elemental Heros', 'Duelo Favorito', 55, '10/9/2022', true, false, false, false),
 	('3262', 'Blackwings', 'Viento Negro hasta la Cima', 82, '10/9/2022', true, false, false, false),

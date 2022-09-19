@@ -61,7 +61,7 @@ values
 insert into kcsep22 (usuario, deck, skill, ndmax, zerotg, zephra, bryan, xenoblur) 
 values 
 	('9862', 'Destiny Heros', 'Reloj del Destino', '10/9/2022', false, false, false, true),
-	('2575', 'Elemental Heros', 'Alianza de Héroes', '10/9/2022', false, false, false, true),
+	('2575', 'Heros', 'Alianza de Héroes', '10/9/2022', false, false, false, true),
 	('1546', 'Shiranui', 'Robo del Destino', '11/9/2022', false, false, false, true);
 --	
 -- Búsquedas de decks y skills
